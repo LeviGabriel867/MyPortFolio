@@ -1,0 +1,197 @@
+/* Estilos gerais */
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Estilos para a barra de navegação */
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .navbar__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar__links li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .navbar__links li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar__links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos para o menu mobile */
+  .navbar__mobile {
+    display: none;
+  }
+  
+  .burguer {
+    display: none;
+  }
+  
+  .mobile__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mobile__links li {
+    margin-bottom: 10px;
+  }
+  
+  .mobile__links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos para o cabeçalho */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .header__left {
+    flex: 1;
+  }
+  
+  .header__right {
+    flex: 1;
+  }
+  
+  .header__image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilos para a seção Sobre */
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .about__left {
+    flex: 1;
+  }
+  
+  .about__right {
+    flex: 1;
+  }
+  
+  .minhacor {
+    color: #333;
+  }
+  
+  .tertiary-title {
+    color: #333;
+  }
+  
+  /* Estilos para a seção de habilidades */
+  .skills {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+  }
+  
+  .skills__content {
+    text-align: center;
+  }
+  
+  .skills__item {
+    list-style: none;
+    margin-bottom: 40px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilos para a seção de projetos */
+  .projects {
+    padding: 50px 0;
+  }
+  
+  .projects__content {
+    text-align: center;
+  }
+  
+  .projects__info a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Estilos para o rodapé */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .footer__contact span {
+    display: block;
+  }
+  
+  .footer__contact span:last-child {
+    margin-top: 10px;
+  }
+  
+  .footer__copyright {
+    margin-top: 20px;
+  }
+  
+  /* Media Queries para dispositivos móveis */
+  @media screen and (max-width: 768px) {
+    .navbar__links {
+      display: none;
+    }
+  
+    .navbar__mobile {
+      display: block;
+    }
+  
+    .burguer {
+      display: block;
+    }
+  
+    .header__left,
+    .header__right {
+      text-align: center;
+    }
+  
+    .about,
+    .skills,
+    .projects {
+      flex-direction: column;
+    }
+  }
+  
