@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     gap:4rem;
+    scroll-margin: 20rem;
     scroll-margin-top: 20rem;
 }
 
@@ -34,11 +35,16 @@
     border-radius: 20px 20px 20px 20px;    
     font-family: Arial, Helvetica, sans-serif;
   }
-  /*
-.about__right p {
-    transition: all 0.3s ease-in-out; 
-  }
   
+#comeco{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 128, 255);
+    border: 3px solid rgba(255, 255, 255, 0.796);
+    padding: 2px;
+    border-radius: 20px 20px 20px 20px;    
+    font-family: Arial, Helvetica, sans-serif;
+  }
   .about__right p:hover {
     transform: scale(1.1); 
 
@@ -64,7 +70,29 @@
     transform: scale(1.1); 
 
 }
-*/
+
+.about .about__left p {
+    margin: 1rem 0 2rem;
+  }
+  
+  .about .about__left ul {
+    margin-left: -1.2rem;
+  }
+  
+  .about .about__left ul li {
+    display: inline-block;
+  }
+  
+  .about .about__left ul li a {
+    display: inline-block;
+    padding: 1rem;
+  }
+  
+  .about .about__right {
+    flex: 1;
+    max-width: 66rem;
+  }
+  
 
   
   

@@ -63,6 +63,13 @@ p:not(:last-of-type),
   display: inline-block;
   border-radius: 0.5rem;
 }
+.minhacor{
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 4.5rem;
+  color:rgba(55, 0, 236, 0.831);
+}
+
 
 .btn.btn-primary {
   background-color: var(--dark-secondary-color);
