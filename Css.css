@@ -112,7 +112,11 @@ body {
     margin-top: 50px; /* Aumentando o espaçamento superior */
     margin-bottom: 50px; /* Aumentando o espaçamento inferior */
   }
-  
+  .about__left p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 1;
+  } 
   .about__left {
     flex: 1;
   }
@@ -128,6 +132,7 @@ body {
   }
  
   .about__right h2{
+    font-size: 20px;
     color: rgb(0, 0, 0);
     border: 2px solid black;
     padding: 2px;
