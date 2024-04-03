@@ -3,6 +3,7 @@ body {
     font-family: 'DM Sans', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
   }
   
   .max-width {
@@ -16,6 +17,7 @@ body {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   .navbar__content {
@@ -42,6 +44,12 @@ body {
   .navbar__links a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar__links a:hover {
+    color: #ffd700;
   }
   
   /* Estilos para o menu mobile */
@@ -51,6 +59,7 @@ body {
   
   .burguer {
     display: none;
+    cursor: pointer;
   }
   
   .mobile__links {
@@ -66,6 +75,7 @@ body {
   .mobile__links a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
   }
   
   /* Estilos para o cabeçalho */
@@ -79,6 +89,7 @@ body {
   
   .header__left {
     flex: 1;
+    margin-right: 20px;
   }
   
   .header__right {
@@ -88,15 +99,18 @@ body {
   .header__image img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   /* Estilos para a seção Sobre */
-  .about {
+/* Estilos para a seção Sobre */
+.about {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    align-items: flex-start;
+    margin-top: 50px; /* Aumentando o espaçamento superior */
+    margin-bottom: 50px; /* Aumentando o espaçamento inferior */
   }
   
   .about__left {
@@ -107,18 +121,27 @@ body {
     flex: 1;
   }
   
-  .minhacor {
-    color: #333;
+  .about__right p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 16px; /* Ajustando o tamanho da fonte */
   }
   
-  .tertiary-title {
-    color: #333;
+  .about__experience {
+    margin-top: 20px;
+  }
+  
+  .about__experience .tertiary-title {
+    margin-top: 10px;
+    font-size: 20px; /* Ajustando o tamanho da fonte */
   }
   
   /* Estilos para a seção de habilidades */
   .skills {
-    background-color: #f4f4f4;
+    background-color: #fff;
     padding: 50px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   .skills__content {
@@ -128,11 +151,22 @@ body {
   .skills__item {
     list-style: none;
     margin-bottom: 40px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 30px;
+    transition: transform 0.3s ease;
   }
   
-  .image-container img {
-    max-width: 100%;
-    height: auto;
+  .skills__item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .skills__item h3 {
+    margin-top: 20px;
+  }
+  
+  .skills__item p {
+    color: #555;
   }
   
   /* Estilos para a seção de projetos */
@@ -147,6 +181,12 @@ body {
   .projects__info a {
     color: #333;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .projects__info a:hover {
+    color: #ffd700;
   }
   
   /* Estilos para o rodapé */
@@ -155,6 +195,7 @@ body {
     color: #fff;
     padding: 50px 0;
     text-align: center;
+    border-top: 1px solid #666;
   }
   
   .footer__contact span {
@@ -167,31 +208,5 @@ body {
   
   .footer__copyright {
     margin-top: 20px;
-  }
-  
-  /* Media Queries para dispositivos móveis */
-  @media screen and (max-width: 768px) {
-    .navbar__links {
-      display: none;
-    }
-  
-    .navbar__mobile {
-      display: block;
-    }
-  
-    .burguer {
-      display: block;
-    }
-  
-    .header__left,
-    .header__right {
-      text-align: center;
-    }
-  
-    .about,
-    .skills,
-    .projects {
-      flex-direction: column;
-    }
   }
   
