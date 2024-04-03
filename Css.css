@@ -126,7 +126,17 @@ body {
     line-height: 1.6;
     font-size: 16px; /* Ajustando o tamanho da fonte */
   }
-  
+ 
+  .about__right h2{
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    padding: 2px;
+    display: inline-block;
+    margin: 0 3px;
+    border-radius: 10px;
+
+  }
+
   .about__experience {
     margin-top: 20px;
   }
